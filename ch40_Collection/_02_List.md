@@ -9,26 +9,27 @@ List 계열의 클래스들은 선형으로 원소를 저장합니다. Array 라
 List 의 주요 메서드를 살펴봅시다. List 계열의 모든 클래스는 List 인터페이스의 추상 메서드를 구현했기때문에 각 클래스의 고유 멤버를 제외한 나머지 핵심 기능은 사용방법이 모두 동일합니다.   
 
 > API Docs : [https://docs.oracle.com/javase/8/docs/api/java/util/List.html](https://docs.oracle.com/javase/8/docs/api/java/util/List.html)
+### 원소 추가
 ```java
 boolean	add(E e)
 ```
-Appends the specified element to the end of this list (optional operation).
-~~~~~~
+원소 e를 마지막 위치에 **추가**합니다. (여기서 E는 제네릭입니다. 제네릭 지정이 없다면 Object 형으로 지정됩니다.)
+<br><br>
 ```java
-void	add(int index, E element)
+void	add(int index, E e)
 ```
-Inserts the specified element at the specified position in this list (optional operation).
-------------------
+원소 e를 index 번 위치에 **삽입**합니다.
+<br><br>
 ```java
 boolean	addAll(Collection<? extends E> c)
 ```
-Appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator (optional operation).
-------------------
+다른 컬렉션 객체의 모든 원소를 **한꺼번에 추가**합니다. 리스트에 변화가 생긴 경우 (즉, 정상적으로 추가된 경우) true를 return합니다.
+<br><br>
 ```java
 boolean	addAll(int index, Collection<? extends E> c)
 ```
-Inserts all of the elements in the specified collection into this list at the specified position (optional operation).
-------------------
+다른 컬렉션 객체의 모든 원소를 index 번 위치에 순서대로 **한꺼번에 삽입**합니다. 리스트에 변화가 생긴 경우 true를 return합니다.
+</hr>
 ```java
 void	clear()
 ```
