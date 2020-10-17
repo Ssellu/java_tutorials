@@ -35,22 +35,39 @@
 ------------------------------------------
 
 ## 2. Collection Framework의 종류
--Interface Collection
-	-Interface Queue
-		-Class LinkedList
-	-Interface List
-		-Class ArrayList
-		-Class Vector
-			-Class Stack
-		-Class LinkedList 
-
-	-Interface Set
-		-Class HashSet
-		-Class TreeSet
-	
--Interface Map
-	-Class HashMap
-	-Class TreeMap
-	-Class Hashtable
-		-Class Properties
+<ul>
+<li>Interface Collection
+  <ul>
+	  <li>Interface Queue
+      <ul>
+		    <li>Class LinkedList</li>
+      </ul>
+    </li>
+	  <li>Interface List
+      <ul>
+        <li>Class ArrayList</li>
+		    <li>Class Vector
+			    <ul>
+            <li>Class Stack</li>
+          </ul>
+        </li>
+		   <li>Class LinkedList</li>
+      </ul>
+    </li>
+  
+  <li>Interface Set
+    <ul>
+      <li>Class HashSet</li>
+      <li>Class TreeSet</li>
+    </ul>
+  </li>
+  <ul>
+</li>
+<li>Interface Map
+	Class HashMap
+	Class TreeMap
+	Class Hashtable
+		Class Properties
+</li>
+</ul>
 ### 2.1 List
