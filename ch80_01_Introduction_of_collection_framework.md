@@ -64,10 +64,15 @@
   <ul>
 </li>
 <li>Interface Map
-	Class HashMap
-	Class TreeMap
-	Class Hashtable
-		Class Properties
+	<ul>
+	<li>Class HashMap</li>
+	<li>Class TreeMap</li>
+	<li>Class Hashtable
+		<ul>
+		<li>Class Properties</li>
+		</ul>
+	</li>
+	</ul>
 </li>
 </ul>
 ### 2.1 List
