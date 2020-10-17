@@ -13,7 +13,7 @@ List 의 주요 메서드를 살펴봅시다. List 계열의 모든 클래스는
 boolean	add(E e)
 ```
 Appends the specified element to the end of this list (optional operation).
-------------------
+~~~~~~
 ```java
 void	add(int index, E element)
 ```
