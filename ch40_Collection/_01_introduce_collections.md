@@ -35,7 +35,7 @@
 ------------------------------------------
 
 ## 2. Collection Framework의 종류
- 다음은 주요 컬렉션 인터페이스와 클래스의 상속관계입니다.   
+ 컬렉션 프레임워크에 속하는 클래스는 수 십여개입니다. 그 많은 컬렉션 중 다음은 주요 컬렉션 인터페이스와 클래스의 상속관계입니다.    
 <ul>
 <li>
 Interface Collection
@@ -45,6 +45,9 @@ Interface Collection
 		<ul>
 		<li>
 		Class LinkedList
+		</li>
+		<li>
+		Class Deque
 		</li>
 		</ul>
 	</li>
@@ -101,3 +104,8 @@ Interface Map
 </li>
 </ul>
 
+ Collection 은 크게 두 개의 인터페이스로 나뉩니다. [java.util.Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)과 [java.util.Map](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html)인데요.     
+ Map은 Collection 인터페이스와 상속 관계가 아니기때문에 컬렉션 프레임워크에 해당하지는 않지만 관례상 컬렉션으로 분류합니다.    
+ 인터페이스들은 각기 다른 특징을 가지고 있습니다. 이를 반대로 말하면 우리가 객체화하여 사용할 컬렉션 클래스들은 그들의 특징에 따라 그에 맞는 인터페이스로 Categorize 되었다고 할 수 있죠.
+ 다음 장에서는 각 인터페이스별 특징을 살펴보겠습니다. 
+ 
