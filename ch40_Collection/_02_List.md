@@ -6,8 +6,12 @@ List 계열의 클래스들은 선형으로 원소를 저장합니다. Array 라
 중복되는 원소가 저장되어도 인덱스로 구분이 가능하기 때문에 중복 저장을 허용합니다.
 ## 2. List 의 주요 구현 클래스
 ### 2.1 java.util.ArrayList 
+>무제한 배열과 같습니다. 내부에서 실제로 배열을 생성합니다.   
+>기본생성자로 생성하는 경우 10칸짜리 배열이 생성됩니다.   
+>이후 칸을 늘려갈 때는 100% 씩 증가합니다.   
 
 ### 2.2 java.util.LinkedList
+
 ### 2.3 java.util.Vector
 ### 2.4 java.util.Stack
 ## 3. List 의 주요 메서드 
@@ -34,6 +38,7 @@ boolean	addAll(Collection<? extends E> c)
 boolean	addAll(int index, Collection<? extends E> c)
 ```
 다른 컬렉션 객체 c의 모든 원소를 index 번 위치에 순서대로 **한꺼번에 삽입**합니다. 리스트에 변화가 생긴 경우 true를 return합니다.
+<br><br><br>
 ### 원소 삭제
 ```java
 void	clear()
@@ -65,7 +70,7 @@ o가 위치한 인덱스를 return 합니다. (o가 리스트에 여러 개 있�
 int	lastIndexOf(Object o)
 ```
 마지막 o가 위치한 인덱스를 return 합니다. (o가 리스트에 여러 개 있다면 가장 뒤에 위치한 o의 인덱스) o가 리스트에 없다면 -1을 반환합니다.
-
+<br><br><br>
 ```java
 boolean	isEmpty()
 ```
@@ -132,8 +137,8 @@ fromIndex <= 인덱스 < toIndex 에 해당하는 원소들만 추출하여 이�
 ```java
 default void	replaceAll(UnaryOperator<E> operator)
 ```
-operator 를 사용하여 모든 원소를 수정합니다. (참고: UnaryOperator 는 single parameter를 가진 람다 함수의 객체형 클래스입니다.)
-오홍 default 메서드네요, 그렇다면 구현클래스에서는 따로 오버라이드를 안했을 가능성이 있네요.
+operator 를 사용하여 모든 원소를 수정합니다. (참고: UnaryOperator 는 single parameter를 가진 람다 함수의 객체형 클래스입니다.)   
+(참고. default 메서드네요! 그렇다면 구현클래스에서는 오버라이드를 안했을 가능성이 있겠군요.)
 <br><br><br>
 
 ```java
@@ -160,7 +165,7 @@ Comparator C에 지정된 내용대로 대상을 정렬합니다.
 ```java
 default Spliterator<E>	spliterator()
 ```
-전체 원소들에 대한 Spliterator 객체를 return합니다. (참고. Spliterator는 대상의 병렬 처리를 위해 사용합니다.)
+전체 원소들에 대한 Spliterator 객체를 return합니다. (참고. Spliterator는 대상의 병렬 처리를 위해 사용 한답니다.)
 <br><br><br>
 
 ### 배열로 
