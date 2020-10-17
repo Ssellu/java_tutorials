@@ -114,25 +114,10 @@ Interface Map
  인터페이스들은 각기 다른 특징을 가지고 있습니다. 이를 반대로 말하면 우리가 객체화하여 사용할 컬렉션 클래스들은 그들의 특징에 따라 그에 맞는 인터페이스로 Categorize 되었다고 할 수 있죠.
  
 ### 2.1 java.util.List
-><pre>선형 구조<br>
-인덱스 있음<br>
-중복 원소 저장 가능
-</pre>
+><pre>선형 구조<br>인덱스 있음<br>중복 원소 저장 가능</pre>
 ### 2.2 java.util.Set
-><pre>비선형 구조<br>
-인덱스 없음<br>
-중복 원소 저장 불가능
-</pre>
+><pre>비선형 구조<br>인덱스 없음<br>중복 원소 저장 불가능</pre>
 ### 2.3 java.util.Queue
-><pre>선형 FIFO 구조 (First In First Out, 선입선출)<br>
-인덱스 없음<br>
-중복 원소 저장 가능<br>
-</pre>
+><pre>선형 FIFO 구조 (First In First Out, 선입선출)<br>인덱스 없음<br>중복 원소 저장 가능<br></pre>
 ### 2.4 java.util.Map
-><pre>비선형 구조<br>
-'키(K)-값(V)' 쌍 단위로 원소를 저장<br>
-K를 통해 V에 접근. <br>
-인덱스 없음<br>
-K는 중복 불가능, V는 K가 다르면 중복 가능<br>
-List, Set, Queue 등의 다른 계열 클래스 중 가장 검색 속도가 빠름.
-</pre>
+><pre>비선형 구조<br>'키(K)-값(V)' 쌍 단위로 원소를 저장<br>K를 통해 V에 접근. <br>인덱스 없음<br>K는 중복 불가능, V는 K가 다르면 중복 가능<br>List, Set, Queue 등의 다른 계열 클래스 중 가장 검색 속도가 빠름.</pre>
