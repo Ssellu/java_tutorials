@@ -35,6 +35,9 @@
 ------------------------------------------
 
 ## 2. Collection Framework의 종류
+ 다음은 
+
+>
 <ul>
 <li>Interface Collection
   <ul>
@@ -75,4 +78,6 @@
 	</ul>
 </li>
 </ul>
+>
 ### 2.1 List
+
