@@ -40,11 +40,11 @@
 >
 <ul>
 <li>Interface Collection
-  <ul>
+	<ul>
 	  <li>Interface Queue
-      <ul>
-		    <li>Class LinkedList</li>
-      </ul>
+      	<ul>
+		   <li>Class LinkedList</li>
+      	</ul>
     </li>
 	  <li>Interface List
       <ul>
