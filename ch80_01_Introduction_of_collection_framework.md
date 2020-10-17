@@ -35,49 +35,49 @@
 ------------------------------------------
 
 ## 2. Collection Framework의 종류
- 다음은 
+ 다음은 주요 컬렉션 인터페이스와 클래스의 상속관계입니다.
 
->
-<ul>
-<li>Interface Collection
+
 	<ul>
-	  <li>Interface Queue
-      	<ul>
-		   <li>Class LinkedList</li>
-      	</ul>
-    </li>
-	  <li>Interface List
-      <ul>
-        <li>Class ArrayList</li>
-		    <li>Class Vector
-			    <ul>
-            <li>Class Stack</li>
-          </ul>
-        </li>
-		   <li>Class LinkedList</li>
-      </ul>
-    </li>
-  
-  <li>Interface Set
-    <ul>
-      <li>Class HashSet</li>
-      <li>Class TreeSet</li>
-    </ul>
-  </li>
-  <ul>
-</li>
-<li>Interface Map
-	<ul>
-	<li>Class HashMap</li>
-	<li>Class TreeMap</li>
-	<li>Class Hashtable
+	<li>Interface Collection
 		<ul>
-		<li>Class Properties</li>
+		  <li>Interface Queue
+		<ul>
+			   <li>Class LinkedList</li>
+		</ul>
+	    </li>
+		  <li>Interface List
+	      <ul>
+		<li>Class ArrayList</li>
+			    <li>Class Vector
+				    <ul>
+		    <li>Class Stack</li>
+		  </ul>
+		</li>
+			   <li>Class LinkedList</li>
+	      </ul>
+	    </li>
+
+	  <li>Interface Set
+	    <ul>
+	      <li>Class HashSet</li>
+	      <li>Class TreeSet</li>
+	    </ul>
+	  </li>
+	  <ul>
+	</li>
+	<li>Interface Map
+		<ul>
+		<li>Class HashMap</li>
+		<li>Class TreeMap</li>
+		<li>Class Hashtable
+			<ul>
+			<li>Class Properties</li>
+			</ul>
+		</li>
 		</ul>
 	</li>
 	</ul>
-</li>
-</ul>
->
+
 ### 2.1 List
 
