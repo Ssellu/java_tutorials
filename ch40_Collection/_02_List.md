@@ -14,27 +14,27 @@ List 의 주요 메서드를 살펴봅시다. List 계열의 모든 클래스는
 boolean	add(E e)
 ```
 원소 e를 마지막 위치에 **추가**합니다. (여기서 E는 제네릭입니다. 제네릭 지정이 없다면 Object 형으로 지정됩니다.)
-<br><br>
+<br><br><br>
 ```java
 void	add(int index, E e)
 ```
 원소 e를 index 번 위치에 **삽입**합니다.
-<br><br>
+<br><br><br>
 ```java
 boolean	addAll(Collection<? extends E> c)
 ```
 다른 컬렉션 객체의 모든 원소를 **한꺼번에 추가**합니다. 리스트에 변화가 생긴 경우 (즉, 정상적으로 추가된 경우) true를 return합니다.
-<br><br>
+<br><br><br>
 ```java
 boolean	addAll(int index, Collection<? extends E> c)
 ```
 다른 컬렉션 객체의 모든 원소를 index 번 위치에 순서대로 **한꺼번에 삽입**합니다. 리스트에 변화가 생긴 경우 true를 return합니다.
-</hr>
+### 원소 삭제
 ```java
 void	clear()
 ```
 Removes all of the elements from this list (optional operation).
-------------------
+
 ```java
 boolean	contains(Object o)
 ```
