@@ -33,29 +33,34 @@
 검색을 더욱 효율적으로 하기 위해 Tree, Map, Hash 등의 **비선형구조**가 등장했습니다. 
 
 ------------------------------------------
+## 2. Collection Framework의 특징
+### 2.1. 모든 원소는 Object 형으로 저장한다.   
+모든 타입의 원소를 소화할 수 있도록 원소의 자료형을 Object로 받습니다.   
+단, Generic을 통해 자료형을 특정할 수 있습니다.
 
-## 2. Collection Framework의 종류
- 컬렉션 프레임워크에 속하는 클래스는 수 십여개입니다. 그 많은 컬렉션 중 다음은 주요 컬렉션 인터페이스와 클래스의 상속관계입니다.    
+### 2.2. 빠른 퍼포먼스와 효율적인 메모리 관리가 가능하다
+자바가 작정하고 만든 라이브러리입니다. 믿고 사용하세요. ㅎㅎ
+
+### 2.3. 원소를 무제한으로 저장할 수 있다.
+컬렉션 객체들은 용량을 초과하는 경우 내부에서 자동으로 그 길이를 늘립니다. 따라서 우리는 크기 걱정 없이 자유롭게 원소를 삽입, 삭제 할 수 있습니다.
+
+## 3. Collection Framework의 종류
+ 컬렉션 프레임워크에 속하는 클래스는 수 십여개입니다. 다음은 그 중 대중적으로 사용되는 컬렉션 인터페이스와 클래스의 상속관계를 리스트 형태로 나타낸 것입니다.    
 <ul>
 <li>
 Interface Collection
 	<ul>
 	<li>
 	Interface Queue
-		<ul>
-		<li>
-		Class LinkedList
-		</li>
-		<li>
-		Class Deque
-		</li>
-		</ul>
 	</li>
 	<li>
 	Interface List
 		<ul>
 		<li>
 		Class ArrayList
+		</li>
+		<li>
+		Class LinkedList
 		</li>
 		<li>
 		Class Vector
@@ -107,5 +112,31 @@ Interface Map
  Collection 은 크게 두 개의 인터페이스로 나뉩니다. [java.util.Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)과 [java.util.Map](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html)인데요.     
  Map은 Collection 인터페이스와 상속 관계가 아니기때문에 컬렉션 프레임워크에 해당하지는 않지만 관례상 컬렉션으로 분류합니다.    
  인터페이스들은 각기 다른 특징을 가지고 있습니다. 이를 반대로 말하면 우리가 객체화하여 사용할 컬렉션 클래스들은 그들의 특징에 따라 그에 맞는 인터페이스로 Categorize 되었다고 할 수 있죠.
- 다음 장에서는 각 인터페이스별 특징을 살펴보겠습니다. 
  
+### 2.1 java.util.List
+><pre>
+선형 구조<br>
+인덱스 있음<br>
+중복 원소 저장 가능
+</pre>
+### 2.2 java.util.Set
+><pre>
+비선형 구조<br>
+인덱스 없음<br>
+중복 원소 저장 불가능
+</pre>
+### 2.3 java.util.Queue
+><pre>
+선형 FIFO 구조 (First In First Out, 선입선출)<br>
+인덱스 없음<br>
+중복 원소 저장 가능<br>
+</pre>
+### 2.4 java.util.Map
+><pre>
+비선형 구조<br>
+'키(K)-값(V)' 쌍 단위로 원소를 저장<br>
+K를 통해 V에 접근. <br>
+인덱스 없음<br>
+K는 중복 불가능, V는 K가 다르면 중복 가능<br>
+List, Set, Queue 등의 다른 계열 클래스 중 가장 검색 속도가 빠름.
+</pre>
