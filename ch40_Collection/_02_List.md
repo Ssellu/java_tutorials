@@ -6,22 +6,17 @@ List 계열의 클래스들은 선형으로 원소를 저장합니다. Array 라
 중복되는 원소가 저장되어도 인덱스로 구분이 가능하기 때문에 중복 저장을 허용합니다.
 ## 2. List 의 주요 구현 클래스
 ### 2.1 java.util.ArrayList 
-<pre>무제한 배열과 같습니다. 클래스가 자체적으로 배열을 생성합니다.<br>
-기본생성자로 생성하는 경우 10칸짜리 배열이 생성됩니다.   
-이후 칸을 늘려갈 때는 100% 씩 증가합니다.</pre>
+<pre>무제한 배열과 같습니다. 클래스가 자체적으로 배열을 생성합니다.<br>기본생성자로 생성하는 경우 10칸짜리 배열이 생성됩니다.<br>이후 칸을 늘려갈 때는 100% 씩 증가합니다.</pre>
 
 ### 2.2 java.util.LinkedList
-<pre>이중연결리스트 구조입니다. 이 녀석은 특이하게도 Deque와 List 인터페이스를 동시에 구현한 클래스입니다.<br>
-QUEUE가 가진 FIFO의 속성을 가지면서 front, rear 포인터를 지니기 위함 같네요.</pre>
+<pre>이중연결리스트 구조입니다. 이 녀석은 특이하게도 Deque와 List 인터페이스를 동시에 구현한 클래스입니다.<br>QUEUE가 가진 FIFO의 속성을 가지면서 front, rear 포인터를 지니기 위함 같네요.</pre>
 
 
 ### 2.3 java.util.Vector
-<pre>ArrayList의 전신(?) 같은 녀석입니다. 컬렉션이 등장하기 전 JDK 1.1 버전에 등장한 클래스입니다.<br>ArrayList가 더 빠른 성능을 가지지만 Vector가 deprecate class까지는 아닙니다.
-ArrayList는 동기화를 보장하지 않는 반면 Vector는 동기화를 보장합니다.<br>
-ArrayList가 100%씩 용량을 키운다면 Vector는 50%씩 용량을 키웁니다.</pre>
+<pre>ArrayList의 전신(?) 같은 녀석입니다. 컬렉션이 등장하기 전 JDK 1.1 버전에 등장한 클래스입니다.<br>ArrayList가 더 빠른 성능을 가지지만 Vector가 deprecate class까지는 아닙니다.<br>ArrayList는 동기화를 보장하지 않는 반면 Vector는 동기화를 보장합니다.<br>ArrayList가 100%씩 용량을 키운다면 Vector는 50%씩 용량을 키웁니다.</pre>
 
 ### 2.4 java.util.Stack
-<pre>LIFO(Last In First Out; 후입선출) 구조를 지닌 클래스입니다. <br>Vector를 상속 받았고 추가로 정의한 push(), pop(), peek() 또한 동기화를 보장합니다.</pre>
+<pre>LIFO(Last In First Out; 후입선출) 구조를 지닌 클래스입니다.<br>Vector를 상속 받았고 추가로 정의한 push(), pop(), peek() 또한 동기화를 보장합니다.</pre>
 ## 3. List 의 주요 메서드 
 List 의 주요 메서드를 살펴봅시다. List 계열의 모든 클래스는 List 인터페이스의 추상 메서드를 구현했기때문에 각 클래스의 고유 멤버를 제외한 나머지 핵심 기능은 사용방법이 모두 동일합니다.   
 
@@ -168,14 +163,6 @@ default void sort(Comparator<? super E> c)
 ```
 Comparator C에 지정된 내용대로 대상을 정렬합니다.
 <br><br><br>
-
-### 기타
-```java
-default Spliterator<E> spliterator()
-```
-전체 원소들에 대한 Spliterator 객체를 return합니다. (참고. Spliterator는 대상의 병렬 처리를 위해 사용 한답니다.)
-<br><br><br>
-
 ### 배열로 
 ```java
 Object[] toArray()
@@ -187,3 +174,12 @@ Object[] toArray()
 ```
 리스트의 길이가  a 배열의 길이와 같다면 a에 담고 이를 return합니다.   
 만약 길이가 다르다면 a 를 그대로 두는 대신 새로운 배열을 생성하여 이를 return합니다.
+<br><br><br>
+### 기타
+```java
+default Spliterator<E> spliterator()
+```
+전체 원소들에 대한 Spliterator 객체를 return합니다. (참고. Spliterator는 대상의 병렬 처리를 위해 사용 한답니다.)
+
+
+
